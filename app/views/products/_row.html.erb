@@ -1,0 +1,7 @@
+<tr id="<%= product.id %>">
+  <td><%= product.name %></td>
+  <td><%= number_to_currency(product.price, precision: 2) %></td>
+  <td>
+    <%= link_to "Editar", edit_product_path(product), remote: true %>
+  </td>
+</tr>
